@@ -1,9 +1,18 @@
 <div class="w-full relative">
-    <video class="w-full h-auto" src="/public/video.mp4" autoplay loop muted></video> 
+    <video 
+
+    class="w-full h-screen object-cover object-top animate-fade animate-duration-1000" 
+    src="/public/video.mp4" 
+    autoplay 
+    loop 
+    muted
+    style="clip-path: polygon(50% 0%, 100% 0, 100% 80%, 50% 100%, 50% 100%, 0 80%, 0 0);"
+    ></video> 
     <video 
       class="absolute -bottom-48 blur-3xl -z-40" 
       src="/public/video.mp4" 
       autoplay 
       loop 
-      muted></video> 
+      muted
+       ></video> 
 </div>
