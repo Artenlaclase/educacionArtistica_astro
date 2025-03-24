@@ -1,6 +1,48 @@
 ---
-import Bento from "../components/landing/Bento.astro";
-import Layout from "../layouts/Layout.astro";
+// src/pages/experiencia.astro
+import Layout from '../layouts/Layout.astro';
 ---
 
-<h1>Experiencia Pedagógica</h1>
+<Layout title="Experiencia Pedagógica" description="Página sobre mi experiencia en educación artística">
+  
+  <main class="min-h-screen bg-gray-50 dark:bg-gray-800 py-8 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-4xl mx-auto">
+      <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">Mi Experiencia Pedagógica</h1>
+      
+      <div class="space-y-8">
+        <!-- Experiencia 1 -->
+        <div class="bg-white dark:bg-gray-700 shadow rounded-lg p-6">
+          <h2 class="text-xl font-semibold text-gray-800 dark:text-white">Profesora de Artes Visuales</h2>
+          <p class="text-gray-600 dark:text-gray-300 mt-1">Escuela Secundaria N°15 • 2018 - Presente</p>
+          <ul class="mt-4 space-y-2 text-gray-700 dark:text-gray-300 list-disc pl-5">
+            <li>Desarrollo de currícula basada en competencias artísticas</li>
+            <li>Talleres de pintura, escultura y fotografía digital</li>
+            <li>Coordinación de muestras anuales de arte estudiantil</li>
+          </ul>
+        </div>
+
+        <!-- Experiencia 2 -->
+        <div class="bg-white dark:bg-gray-700 shadow rounded-lg p-6">
+          <h2 class="text-xl font-semibold text-gray-800 dark:text-white">Tallerista en Centro Cultural</h2>
+          <p class="text-gray-600 dark:text-gray-300 mt-1">Centro Cultural Municipal • 2015 - 2018</p>
+          <ul class="mt-4 space-y-2 text-gray-700 dark:text-gray-300 list-disc pl-5">
+            <li>Talleres de arte para niños y adolescentes</li>
+            <li>Arte terapia para adultos mayores</li>
+            <li>Organización de exposiciones comunitarias</li>
+          </ul>
+        </div>
+
+        <!-- Experiencia 3 -->
+        <div class="bg-white dark:bg-gray-700 shadow rounded-lg p-6">
+          <h2 class="text-xl font-semibold text-gray-800 dark:text-white">Asistente en Museo de Arte</h2>
+          <p class="text-gray-600 dark:text-gray-300 mt-1">Museo Provincial • Verano 2014</p>
+          <ul class="mt-4 space-y-2 text-gray-700 dark:text-gray-300 list-disc pl-5">
+            <li>Guía educativa para visitas escolares</li>
+            <li>Apoyo en talleres educativos</li>
+            <li>Investigación para material didáctico</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>
