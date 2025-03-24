@@ -5,11 +5,42 @@ import BentoItem from './BentoItem.astro'
 
 <section class="
 w-full max-w-[1400px]
-grid grid-cols-10 auto-rows-[35rem] gap-4
+grid grid-cols-10 auto-rows-[30rem] gap-4
 mx-auto p-20
 ">
-<BentoItem title="Experiencias pedagógicas" subtitle="20 años de clases" />
-<BentoItem title="Proyectos Artísticos" subtitle="Audiovisuales"/>
-<BentoItem title="Audiovisuales" subtitle="cortometrajes y clip musicales" />
-<BentoItem title="Planificaciones" subtitle="Recusrsos pedagógicos"/>
+<BentoItem 
+class="col-span-10 md:col-span-4" 
+title="Experiencias pedagógicas" 
+subtitle="20 años de clases" 
+>
+    <div
+        slot="image"
+        class="absolute left-0 top-0 bottom-0 
+               w-full h-full group-hover:scale-110 transition-scale duration-1000 
+               ease-in-out opacity-90 bn-blend-luminosity bg-cover bg-center bg-no-repeat
+               bg-amber-950 -z-10
+        "
+        style="background-image: url('/experiencia.webp');"
+    >
+    </div>
+    <p slot="content" class="max-w-xl text-amber-100">
+        El profesor Raúl Rosales ha guiado a generaciones de estudiantes en la <strong>exploración creativa</strong>. A través de <strong>metodologías innovadoras</strong> y proyectos significativos, ha fomentado la <strong>expresión artística</strong> y el <strong>pensamiento crítico</strong>, dejando una huella en la educación visual.
+    </p>
+
+</BentoItem>
+<BentoItem 
+class="col-span-10 md:col-span-6" 
+title="Proyectos Artísticos" 
+subtitle="Audiovisuales"
+/>
+<BentoItem 
+class="col-span-10 md:col-span-6" 
+title="Audiovisuales" 
+subtitle="cortometrajes y clip musicales" 
+/>
+<BentoItem 
+class="col-span-10 md:col-span-4" 
+title="Planificaciones" 
+subtitle="Recusrsos pedagógicos"
+/>
 </section>
