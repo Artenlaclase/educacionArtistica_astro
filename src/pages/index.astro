@@ -1,11 +1,20 @@
 ---
-import Welcome from '../components/Welcome.astro';
+import Navbar from '../components/landing/Nabvar.astro'; // Ensure this file exists at the specified path
+import Footer from '../components/landing/Footer.astro'; // Ensure this file exists at the specified path
+import Hero from '../components/landing/Hero.astro'; // Ensure this file exists at the specified path
 import Layout from '../layouts/Layout.astro';
+import Video from '../components/landing/Video.astro'; // Ensure this file exists at the specified path
+import Bento from '../components/landing/Bento.astro';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Arte y Educación" description="Educación de las Artes Visuales en las Escuelas">
+	<Navbar></Navbar>
+	<Video />
+	<Bento>	</Bento>
+	<Hero></Hero>
+	<Footer></Footer>
 </Layout>
+

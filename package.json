@@ -12,6 +12,7 @@
     "@astrojs/react": "^4.2.1",
     "@tailwindcss/vite": "^4.0.15",
     "astro": "^5.5.4",
+    "flowbite": "^3.1.2",
     "lucide-react": "^0.483.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -19,6 +20,7 @@
   },
   "devDependencies": {
     "@types/react": "^19.0.12",
-    "@types/react-dom": "^19.0.4"
+    "@types/react-dom": "^19.0.4",
+    "tailwindcss-animated": "^2.0.0"
   }
 }
