@@ -1,48 +1,170 @@
 ---
-// src/pages/experiencia.astro
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+
 ---
 
-<Layout title="Experiencia Pedagógica" description="Página sobre mi experiencia en educación artística">
-  
-  <main class="min-h-screen bg-gray-50 dark:bg-gray-800 py-8 px-4 sm:px-6 lg:px-8">
-    <div class="max-w-4xl mx-auto">
-      <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">Mi Experiencia Pedagógica</h1>
-      
-      <div class="space-y-8">
-        <!-- Experiencia 1 -->
-        <div class="bg-white dark:bg-gray-700 shadow rounded-lg p-6">
-          <h2 class="text-xl font-semibold text-gray-800 dark:text-white">Profesora de Artes Visuales</h2>
-          <p class="text-gray-600 dark:text-gray-300 mt-1">Escuela Secundaria N°15 • 2018 - Presente</p>
-          <ul class="mt-4 space-y-2 text-gray-700 dark:text-gray-300 list-disc pl-5">
-            <li>Desarrollo de currícula basada en competencias artísticas</li>
-            <li>Talleres de pintura, escultura y fotografía digital</li>
-            <li>Coordinación de muestras anuales de arte estudiantil</li>
-          </ul>
-        </div>
+<Layout title="Experiencia pedagógica" description="Experiencia profesional en la enseñanaza de las artes visuales y tecnología.">
+    <main class="container mx-auto px-4 py-8">
+        <!-- Título principal -->
+        <h1 class="text-4xl font-bold mb-8 text-center">Raúl Rosales</h1>
+        <h2 class="text-2xl font-semibold mb-8 text-center text-gray-600">
+            Profesor de Artes Visuales y Educador Multidisciplinario
+        </h2>
 
-        <!-- Experiencia 2 -->
-        <div class="bg-white dark:bg-gray-700 shadow rounded-lg p-6">
-          <h2 class="text-xl font-semibold text-gray-800 dark:text-white">Tallerista en Centro Cultural</h2>
-          <p class="text-gray-600 dark:text-gray-300 mt-1">Centro Cultural Municipal • 2015 - 2018</p>
-          <ul class="mt-4 space-y-2 text-gray-700 dark:text-gray-300 list-disc pl-5">
-            <li>Talleres de arte para niños y adolescentes</li>
-            <li>Arte terapia para adultos mayores</li>
-            <li>Organización de exposiciones comunitarias</li>
-          </ul>
-        </div>
+        <!-- Introducción -->
+        <section class="mb-12">
+            <p class="text-lg mb-4">
+                Soy Raúl Rosales, profesor de Artes Visuales con más de 20 años
+                de experiencia en la enseñanza y creación artística. Mi
+                trayectoria profesional abarca la educación en distintos
+                establecimientos de la región metropolitana de Chile, con un enfoque innovador que integra
+                el arte, la tecnología y el cine en el aprendizaje.
+            </p>
+            <p class="text-lg mb-4">
+                Actualmente, me desempeño como profesor de Artes Visuales en el Liceo Municipal Pablo Neruda,
+                donde guío a estudiantes en la exploración del arte
+                contemporáneo, la creación de sitios web y la educación
+                artística.
+            </p>
+        </section>
 
-        <!-- Experiencia 3 -->
-        <div class="bg-white dark:bg-gray-700 shadow rounded-lg p-6">
-          <h2 class="text-xl font-semibold text-gray-800 dark:text-white">Asistente en Museo de Arte</h2>
-          <p class="text-gray-600 dark:text-gray-300 mt-1">Museo Provincial • Verano 2014</p>
-          <ul class="mt-4 space-y-2 text-gray-700 dark:text-gray-300 list-disc pl-5">
-            <li>Guía educativa para visitas escolares</li>
-            <li>Apoyo en talleres educativos</li>
-            <li>Investigación para material didáctico</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </main>
+        <!-- Experiencia Profesional -->
+        <section class="mb-12">
+            <div class="flex items-center mb-6">
+                <h2 class="text-3xl font-bold mr-4">Experiencia Profesional</h2>
+                <a
+                    href="https://www.linkedin.com/in/raulrosalesrebolledo/"
+                    target="_blank"
+                    class="text-blue-600 hover:text-blue-800 transition-colors duration-300"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="w-6 h-6"
+                    >
+                        <path
+                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                        ></path>
+                    </svg>
+                </a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <Card
+                    title="Profesor de Artes Visuales"
+                    description="Municipalidad de Navidad (2024 - Actualidad)"
+                    date="2024 - Actualidad"
+                    color="bg-blue-100"
+                />
+                <Card
+                    title="Profesor de Artes Visuales"
+                    description="Colegio Politécnico María Griselda Valle (2020 - 2024)"
+                    date="2020 - 2024"
+                    color="bg-blue-100"
+                />
+                <Card
+                    title="Profesor de Educación Tecnológica"
+                    description="Colegio Particular Politécnico Eyzaguirre (2019 - 2020)"
+                    date="2019 - 2020"
+                    color="bg-blue-100"
+                />
+                <!-- Agrega más tarjetas según sea necesario -->
+            </div>
+        </section>
+
+        <!-- Formación Académica y Especializaciones -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-6">
+                Formación Académica y Especializaciones
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <Card
+                    title="Magíster en Innovación Curricular y Evaluación Educativa"
+                    description="Universidad del Desarrollo (2013)"
+                    date="2013"
+                    color="bg-yellow-100"
+                />
+                <Card
+                    title="Postítulo en Educación Tecnológica"
+                    description="Universidad Viña del Mar (2009)"
+                    date="2009"
+                    color="bg-yellow-100"
+                />
+                <Card
+                    title="Licenciado en Educación y Pedagogía en Artes Plásticas"
+                    description="Universidad Metropolitana de Ciencias de la Educación (2005)"
+                    date="2005"
+                    color="bg-yellow-100"
+                />
+            </div>
+        </section>
+
+        <!-- Capacitaciones y Cursos Destacados -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-6">
+                Capacitaciones y Cursos Destacados
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <Card
+                    title="Cine para Educadores: Apreciación y Creación"
+                    description="Cineteca Nacional de Chile (2024)"
+                    date="2024"
+                    color="bg-blue-100"
+                />
+                <Card
+                    title="Estrategias de Comprensión Lectora"
+                    description="Educrea (2024)"
+                    date="2024"
+                    color="bg-blue-100"
+                />
+                <Card
+                    title="Metodología con uso de TICs"
+                    description="Universidad de la Frontera (2022)"
+                    date="2022"
+                    color="bg-blue-100"
+                />
+                <!-- Agrega más tarjetas según sea necesario -->
+            </div>
+        </section>
+
+        <!-- Áreas de Especialización -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-6">Áreas de Especialización</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <Card
+                    title="Arte contemporáneo y educación artística"
+                    description="Exploración de técnicas modernas y su aplicación en la educación."
+                    color="bg-indigo-100"
+                />
+                <Card
+                    title="Producción audiovisual y cine independiente"
+                    description="Creación de proyectos audiovisuales con enfoque educativo."
+                    color="bg-indigo-100"
+                />
+                <Card
+                title="Desarrollo web y tecnología educativa"
+                description="Uso de herramientas digitales para enriquecer el aprendizaje."
+                color="bg-indigo-100"
+                link="https://www.raulrosales.cl" 
+              />
+            </div>
+        </section>
+
+        <!-- Compromiso -->
+        <section>
+            <h2 class="text-3xl font-bold mb-6">Mi Compromiso</h2>
+            <p class="text-lg mb-4">
+                Mi compromiso es potenciar la creatividad y la experimentación
+                en el arte, promoviendo el uso de herramientas digitales y
+                tecnológicas para enriquecer la experiencia de aprendizaje de
+                los estudiantes. Siempre estoy en búsqueda de nuevas estrategias
+                que combinen el arte y la educación para generar un impacto
+                significativo en mis estudiantes y en la comunidad educativa.
+            </p>
+        </section>
+    </main>
 </Layout>
+
