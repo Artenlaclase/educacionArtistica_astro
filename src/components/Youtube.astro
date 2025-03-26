@@ -1,0 +1,27 @@
+---
+const channelUrl = "https://www.youtube.com/@Artenlaclase"; 
+const latestVideoId = "8sY55nBkj5s"; 
+---
+
+<section class="flex flex-col items-center text-center p-8 bg-gray-100 rounded-lg shadow-lg">
+  <h2 class="text-2xl font-bold text-gray-900 mb-4">🎨 Visita nuestro canal de YouTube</h2>
+  <p class="text-gray-700 mb-4">Explora nuestros videos sobre arte y educación.</p>
+  
+  <!-- Vista previa del último video -->
+  <div class="mb-4 w-full max-w-lg">
+    <iframe 
+      class="w-full rounded-lg shadow-md" 
+      height="315" 
+      src={`https://www.youtube.com/embed/${latestVideoId}`} 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen
+    ></iframe>
+  </div>
+
+  <!-- Botón para ir al canal -->
+  <a href={channelUrl} target="_blank" rel="noopener noreferrer" 
+    class="px-6 py-3 bg-red-600 text-white font-semibold rounded-lg shadow-md hover:bg-red-700 transition">
+    🔴 Ir al Canal
+  </a>
+</section>
