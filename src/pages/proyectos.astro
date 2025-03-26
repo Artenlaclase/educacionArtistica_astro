@@ -1,0 +1,57 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+
+---
+
+<Layout title="Proyectos artísticos" description="Conoce los proyectos artísticos en los que he participado.">
+    <main class="container mx-auto px-4 py-8">
+        <h1 class="text-4xl font-bold mb-8">Proyectos Artísticos</h1>
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-6">Proyectos Destacados</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <Card
+                    title="Cine para Educadores: Apreciación y Creación"
+                    description="Cineteca Nacional de Chile (2024)"
+                    date="2024"
+                    color="bg-blue-100"
+                />
+                <Card
+                    title="Estrategias de Comprensión Lectora"
+                    description="Educrea (2024)"
+                    date="2024"
+                    color="bg-blue-100"
+                />
+                <Card
+                    title="Metodología con uso de TICs"
+                    description="Universidad de la Frontera (2022)"
+                    date="2022"
+                    color="bg-blue-100"
+                />
+                <!-- Agrega más tarjetas según sea necesario -->
+            </div>
+        </section>
+
+        <!-- Áreas de Especialización -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-6">Áreas de Especialización</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <Card
+                    title="Arte contemporáneo y educación artística"
+                    description="Exploración de técnicas modernas y su aplicación en la educación."
+                    color="bg-indigo-100"
+                />
+                <Card
+                    title="Producción audiovisual y cine independiente"
+                    description="Creación de proyectos audiovisuales con enfoque educativo."
+                    color="bg-indigo-100"
+                />
+                <Card
+                    title="Desarrollo web y tecnología educativa"
+                    description="Uso de herramientas digitales para enriquecer el aprendizaje."
+                    color="bg-indigo-100"
+                    link="https://www.raulrosales.cl" 
+                />
+
+
+</Layout>
