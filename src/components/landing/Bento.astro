@@ -3,12 +3,12 @@ import BentoItem from './BentoItem.astro'
 
 ---
 <section class="
-w-full max-w-[1400px]
+w-full max-w-[1400px] min-h-screen 
 grid grid-cols-10 auto-rows-[30rem] gap-4
 mx-auto p-20
 ">
 <BentoItem 
-class="col-span-10 md:col-span-4" 
+class="col-span-20 md:col-span-4" 
 title="Experiencias pedagógicas" 
 subtitle="20 años de clases" 
 >
@@ -22,13 +22,15 @@ subtitle="20 años de clases"
         style="background-image: url('/experiencia.webp');"
     >
     </div>
-    <p slot="content" class="max-w-xl text-amber-100">
-        El profesor Raúl Rosales ha guiado a generaciones de estudiantes en la <strong>exploración creativa</strong>. A través de <strong>metodologías innovadoras</strong> y proyectos significativos, ha fomentado la <strong>expresión artística</strong> y el <strong>pensamiento crítico</strong>, dejando una huella en la educación visual.
+    <p slot="content" class="max-w-xl text-white">
+        El profesor Raúl Rosales ha guiado a generaciones en la <strong>exploración creativa</strong> . 
+        Con metodologías innovadoras y proyectos significativos, fomenta la expresión artística y 
+        el pensamiento crítico, dejando huella en la educación visual.
     </p>
 
 </BentoItem>
 <BentoItem 
-class="col-span-10 md:col-span-6" 
+class="col-span-20 md:col-span-6" 
 title="Proyectos Artísticos" 
 subtitle="Audiovisuales y Planificaciones"
 >
@@ -42,13 +44,16 @@ subtitle="Audiovisuales y Planificaciones"
         style="background-image: url('/proyectos.webp');"
     >
     </div>
-    <p slot="content" class="max-w-xl text-amber-100">
-        Los proyectos artísticos de Raúl Rosales han sido reconocidos por su <strong>calidad y originalidad</strong>. Sus cortometrajes y clip musicales han sido exhibidos en festivales nacionales e internacionales, y sus planificaciones han sido adoptadas por docentes de todo el país.
+    <p slot="content" class="max-w-xl text-white">
+        Los proyectos de Raúl Rosales destacan por su <strong> calidad y originalidad</strong>. 
+        Sus cortometrajes y clips musicales ayudan a jóvenes a 
+        <strong> comprender el proceso audiovisual</strong>, 
+        y sus metodologías son adoptadas por otros docentes.
     </p>
 </BentoItem>
 
 <BentoItem 
-class="col-span-10 md:col-span-6" 
+class="col-span-20 md:col-span-6" 
 title="Audiovisuales" 
 subtitle="Cortometrajes y clip musicales" 
 >
@@ -62,12 +67,12 @@ subtitle="Cortometrajes y clip musicales"
         style="background-image: url('/audiovisuales.webp');"
     >
     </div>
-    <p slot="content" class="max-w-xl text-amber-100">
+    <p slot="content" class="max-w-xl text-white">
         Los audiovisuales de Raúl Rosales han sido reconocidos por su <strong>calidad y originalidad</strong>. Sus cortometrajes y clip musicales han sido exhibidos en festivales nacionales e internacionales, y sus planificaciones han sido adoptadas por docentes de todo el país.
     </p>
 </BentoItem>
 <BentoItem 
-class="col-span-10 md:col-span-4" 
+class="col-span-20 md:col-span-4" 
 title="Planificaciones" 
 subtitle="Recursos pedagógicos"
 >
@@ -81,7 +86,7 @@ subtitle="Recursos pedagógicos"
         style="background-image: url('/planificaciones.webp');"
     >
     </div>
-    <p slot="content" class="max-w-xl text-amber-100">
+    <p slot="content" class="max-w-xl text-white">
         Las planificaciones de Raúl Rosales han sido reconocidas por su <strong>calidad y originalidad</strong>. Sus cortometrajes y clip musicales han sido exhibidos en festivales nacionales e internacionales, y sus planificaciones han sido adoptadas por docentes de todo el país.
     </p>
 </BentoItem>

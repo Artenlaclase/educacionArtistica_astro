@@ -19,14 +19,37 @@ shadow-inner shadow-white/10
 overflow-hidden
 group
 `}
-> <div class="absolute z-10 bottom-0 top-0 w-full h-full
+>
+    <!-- <div class="absolute z-10 bottom-0 top-0 w-full h-full
         bg-gradient-to-b from-transparent from-30% via-black/10 to-black/60">
+</div> -->
 
-</div>
+    <div class="absolute inset-0 bg-black/50"></div>
     <slot name="image" />
-    <div class="relative select-none flex flex-col gap-1 p-4 md:p-6 text-lg z-20 justify-start md:justify-end h-full">
-        <h2 class="text-3xl font-semibold text-balance text-white mb-4">{title}</h2>
-        {subtitle && <h3 class="text-3xl font-semibold text-sky-200/80 -mt-4 mb-4">{subtitle}</h3>}
+    <div
+        class="
+        absolute 
+        inset-0 
+        bg-gradient-to-b 
+        from-black/40 
+        via-black/20 
+        to-black/80"
+    >
+    </div>
+
+    <div
+        class="relative select-none flex flex-col gap-2 md:gap-4 p-6 md:p-8 text-lg z-20 justify-start md:justify-end h- full w-full md:w3/4 mx-auto"
+    >
+        <h2 class="text-3xl font-semibold text-balance text-white drop-shadow-md -mt-2 md:-mt-4 mb-2 md:mb-4">
+            {title}
+        </h2>
+        {
+            subtitle && (
+                <h3 class="text-3xl font-semibold text-sky-200/80 drop-shadow-md -mt-4 mb-4">
+                    {subtitle}
+                </h3>
+            )
+        }
 
         <slot name="content" />
     </div>
