@@ -20,11 +20,11 @@ overflow-hidden
 group
 `}
 > <div class="absolute z-10 bottom-0 top-0 w-full h-full
-        bg-gradient-to-b from-transparent from-40% via-black/20 to-black/80">
+        bg-gradient-to-b from-transparent from-30% via-black/10 to-black/60">
 
 </div>
     <slot name="image" />
-    <div class="relative select-none flex flex-col gap-1 p-6 text-lg z-20 justify-end h-full">
+    <div class="relative select-none flex flex-col gap-1 p-4 md:p-6 text-lg z-20 justify-start md:justify-end h-full">
         <h2 class="text-3xl font-semibold text-balance text-white mb-4">{title}</h2>
         {subtitle && <h3 class="text-3xl font-semibold text-sky-200/80 -mt-4 mb-4">{subtitle}</h3>}
 
