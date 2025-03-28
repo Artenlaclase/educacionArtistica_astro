@@ -1,13 +1,60 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Mail, Phone, MapPin, FileText } from 'lucide-react';
+    
 ---
 
 <Layout title="Contacto" description="¡Hablemos!">
-    <main class="container mx-auto px-4 py-8">
-        <h1 class="text-4xl font-bold mb-8">Contacto</h1>
-        <section class="mb-12">
-            <h2 class="text-3xl font-bold mb-6">¡Hablemos!</h2>
-            <p class="text-lg mb-4">
-                Si deseas contactarme para colaborar en un proyecto, compartir ideas o simplemente saludar, no dudes en escribirme. Estoy disponible en las siguientes redes sociales y correo electrónico:                     
-
+   
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacto - Profesor Artes Visuales y Tecnología</title>
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    </head>
+    <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+        <div class="max-w-3xl mx-auto p-6 bg-white shadow-lg rounded-lg">
+            <h1 class="text-2xl font-bold text-gray-800 text-center">Contacto</h1>
+            <p class="text-gray-600 text-center mt-2">Envíame un mensaje o contáctame por mis redes.</p>
+    
+            <div class="mt-6 space-y-4">
+                <div class="flex items-center space-x-4">
+                    <Mail class="text-blue-500"/>
+                    <a href="mailto:correo@ejemplo.com" class="text-gray-700 hover:text-blue-500">correo@ejemplo.com</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <Phone class="text-green-500"/>
+                    <span class="text-gray-700">+56 9 1234 5678</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <MapPin class="text-red-500"/>
+                    <span class="text-gray-700">Santiago, Chile</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <FileText class="text-gray-500"/>
+                    <a href="/cv.pdf" download class="text-gray-700 hover:text-gray-500">Descargar CV</a>
+                </div>
+            </div>
+    
+            <form action="#" method="POST" class="mt-6 space-y-4">
+                <div>
+                    <label class="block text-gray-700">Nombre</label>
+                    <input type="text" name="nombre" class="w-full p-2 border rounded-lg focus:ring focus:ring-blue-200" required>
+                </div>
+                <div>
+                    <label class="block text-gray-700">Correo</label>
+                    <input type="email" name="correo" class="w-full p-2 border rounded-lg focus:ring focus:ring-blue-200" required>
+                </div>
+                <div>
+                    <label class="block text-gray-700">Mensaje</label>
+                    <textarea name="mensaje" rows="4" class="w-full p-2 border rounded-lg focus:ring focus:ring-blue-200" required></textarea>
+                </div>
+                <button type="submit" class="w-full bg-blue-600 text-white p-2 rounded-lg hover:bg-blue-700">Enviar</button>
+            </form>
+        </div>
+    </body>
+    </html>
+    
 </Layout>
